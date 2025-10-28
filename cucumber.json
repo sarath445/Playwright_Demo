@@ -1,0 +1,15 @@
+{
+    "default" : {
+        "formatOptions":{
+            "snippetInterface": "async-await"
+        },
+        "path" : ["feature/*.feature"
+    ],
+    "publishQuiet" : true,
+    "dryRun" : false,
+    "require":["features/step_definitions/**/*.ts"
+],
+    "requireModule": ["ts-node/register/transpile-only"
+]
+    }
+}
