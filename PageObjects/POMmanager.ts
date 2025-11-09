@@ -2,6 +2,8 @@ import { Page } from "@playwright/test";
 import { Dashboard } from "./Dashboard";
 import { LoginPage } from "./LoginPage";
 import { CartPage } from "./CartPage";
+import { OrderPlacePage } from "./OrderPlacePage";
+import { OrderHistoryPage } from "./OrderHistoryPage";
 
 
 export class POMmanager{
@@ -12,6 +14,8 @@ export class POMmanager{
          global.loginpage = new LoginPage(this.page);
          global.dashboardPage = new Dashboard(this.page);
          global.pagecart = new CartPage(this.page);
+         global.orderPlace = new OrderPlacePage(this.page);
+         global.orderHistory = new OrderHistoryPage(this.page);
     }
 
    }
@@ -21,6 +25,8 @@ declare global
         var pagecart : CartPage;
         var loginpage: LoginPage;
         var dashboardPage: Dashboard;
+        var orderPlace : OrderPlacePage;
+        var orderHistory: OrderHistoryPage;
     }
 
 

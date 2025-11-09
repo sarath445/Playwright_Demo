@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "run_script": "npx playwright test ClientAppPO.spec.ts --project=chromium"
+    "run_script": "npx cucumber-js"
   },
   "keywords": [],
   "author": "",
