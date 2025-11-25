@@ -8,6 +8,7 @@ test.only("playwright test case", async({page})=>{
      const productName = 'ZARA COAT 3';         //specific product which we want.
      const email = "qazwsx@gmail.com";
      const confirmMsg = " Thankyou for the order.";
+     
     await page.goto("https://rahulshettyacademy.com/client/#/auth/login");
     await page.getByPlaceholder("email@example.com").fill("qazwsx@gmail.com");
     await page.getByPlaceholder("enter your passsword").fill("Sobhs@123");
@@ -15,6 +16,7 @@ test.only("playwright test case", async({page})=>{
     await page.waitForLoadState('networkidle'); 
     const titles = await page.locator(".card-body b").allTextContents();
     console.log(titles);
+    //avoiding for loop using filter function for specific product.
     await page.locator(".card-body").filter({hasText:"ADIDAS ORIGINAL"}).getByRole("button",{name:" Add To Cart"}).click();
     await page.getByRole("listitem").getByRole("button",{name:"Cart"}).click();
     

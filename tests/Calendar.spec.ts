@@ -1,5 +1,6 @@
 import { expect, test } from "@playwright/test";
 
+//@regression
 test("Calendar validations", async({page})=>{
 
     const monthNumber = 8;
