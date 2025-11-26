@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { url } from "inspector";
 
 test('playwright special locators', async({page})=>{
     await page.goto("https://rahulshettyacademy.com/angularpractice/");
@@ -10,6 +11,8 @@ test('playwright special locators', async({page})=>{
     await page.getByText("Success! The Form has been submitted successfully!.").isVisible();
     await page.getByRole("link",{name : 'Shop'}).click();
     await page.locator("app-card").filter({hasText: 'Samsung Note 8'}).getByRole("button").click();
-    await page.pause();
+   // await page.pause();
+   expect(url).toBe(false)
+   
 
 })

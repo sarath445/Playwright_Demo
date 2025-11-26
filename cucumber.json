@@ -1,6 +1,8 @@
 {
     "default" : {
+        "tags":"@demo",
         "formatOptions":{
+            
             "snippetInterface": "async-await"
         },
         "path" : ["feature/*.feature"
