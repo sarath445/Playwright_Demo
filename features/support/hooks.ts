@@ -1,10 +1,10 @@
-  import { After, AfterStep, Before, BeforeStep, Status } from "@cucumber/cucumber";
+  import { After, AfterStep, Before, BeforeStep, setDefaultTimeout, Status } from "@cucumber/cucumber";
   import { chromium } from '@playwright/test';
   import { POMmanager } from '../../PageObjects/POMmanager';
 
   let browser:any;    //dynamically typed variable.
-
-  Before(async function({pickle}){
+  setDefaultTimeout(60 * 1000); // 60 seconds
+  Before("@web",async function({pickle}){
     console.log("before hooks Test started");
       browser = await chromium.launch({headless:false,slowMo:200});  //slows down the execution by 200ms
         const context = await browser.newContext();

@@ -4,6 +4,8 @@ import { LoginPage } from "./LoginPage";
 import { CartPage } from "./CartPage";
 import { OrderPlacePage } from "./OrderPlacePage";
 import { OrderHistoryPage } from "./OrderHistoryPage";
+import { BromcomHome } from "./BromcomHome"; 
+import { BromcomHomeProduct } from "./BromcomHomeProduct";   
 
 
 export class POMmanager{
@@ -16,6 +18,8 @@ export class POMmanager{
          global.pagecart = new CartPage(this.page);
          global.orderPlace = new OrderPlacePage(this.page);
          global.orderHistory = new OrderHistoryPage(this.page);
+         global.bromcomHome = new BromcomHome(this.page);
+         global.bromcomHomeProduct = new BromcomHomeProduct(this.page);
     }
 
    }
@@ -27,6 +31,8 @@ declare global
         var dashboardPage: Dashboard;
         var orderPlace : OrderPlacePage;
         var orderHistory: OrderHistoryPage;
+        var bromcomHome : BromcomHome;
+        var bromcomHomeProduct : BromcomHomeProduct;
     }
 
 

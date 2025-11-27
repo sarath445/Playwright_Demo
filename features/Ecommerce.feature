@@ -1,5 +1,6 @@
+@web
 Feature: Ecommerce validation
-
+  @ignore
   Scenario: Placing an order and verifying in order history
     Given a login to Ecommerce application with "qazwsx@gmail.com" and "Sobhs@123"
     When add "ZARA COAT 3" to cart

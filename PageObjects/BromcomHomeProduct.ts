@@ -14,5 +14,12 @@ export class BromcomHomeProduct{
         await this.page.hover(this.productsOption);
         await this.page.hover(this.primaryoption);
         await this.page.click(this.primaryMISoption);
+
     }
+
+    async verifyNavigationUrl(){
+        expect(this.page.url()).toBe(`https://bromcom.com/primary-schoolmis`);
+    }
+
+
 }

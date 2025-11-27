@@ -1,5 +1,7 @@
-Feature: Bromcome demo validation
+@web
+Feature: BromcomeDemoValidation
 
+    @test1
     Scenario: Navigating to Bromcom Primary MIS page
         Given a user navigates to Bromcom application
         When user hover on Products option and select Primary MIS option
