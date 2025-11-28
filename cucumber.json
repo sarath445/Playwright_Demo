@@ -8,8 +8,9 @@
     ],
     "publishQuiet": true,
     "dryRun": false,
-    "tags": "@web",
+    "tags": "@test1",
     "parallel":2,
+   
     "require": [
       "features/step_definitions/**/*.ts",
       "features/support/hooks.ts"

@@ -3,11 +3,12 @@
   import { POMmanager } from '../../PageObjects/POMmanager';
 
   let browser:any;    //dynamically typed variable.
+
   setDefaultTimeout(60 * 1000); // 60 seconds
-  Before("@web",async function({pickle}){
+  Before(async function({pickle}){
     console.log("before hooks Test started");
       browser = await chromium.launch({headless:false,slowMo:200});  //slows down the execution by 200ms
-        const context = await browser.newContext();
+        const context = await browser.newContext({viewport:{width:1280,height:720}});
         this.page  = await context.newPage();
         this.poManager = new POMmanager(this.page);
         console.log('Scenario Name: '+pickle.name);

@@ -1,4 +1,4 @@
-import { Given, Then, When } from "@cucumber/cucumber"; 
+import { Given, setDefaultTimeout, Then, When } from "@cucumber/cucumber"; 
 
 Given('a user navigates to Bromcom application', async function() {
     await bromcomHome.navigateToBromcomHome();
@@ -9,7 +9,7 @@ When('user hover on Products option and select Primary MIS option', async functi
   // Write code here that turns the phrase above into concrete actions
 })
 
-Then('user lands on Bromcom Primary MIS page successfully', async function() {
+Then('user lands on Bromcom Primary MIS page successfully',{timeout:10*1000}, async function() {
     await bromcomHomeProduct.verifyNavigationUrl();
   // Write code here that turns the phrase above into concrete actions
 })
