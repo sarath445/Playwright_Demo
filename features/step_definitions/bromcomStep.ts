@@ -10,6 +10,6 @@ When('user hover on Products option and select Primary MIS option', async functi
 })
 
 Then('user lands on Bromcom Primary MIS page successfully',{timeout:10*1000}, async function() {
-    await bromcomHomeProduct.verifyNavigationUrl();
+    await bromcomHomeProduct.verifyNavigationTitle();
   // Write code here that turns the phrase above into concrete actions
 })

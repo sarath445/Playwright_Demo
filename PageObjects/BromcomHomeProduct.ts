@@ -20,7 +20,7 @@ export class BromcomHomeProduct {
     await this.page.waitForTimeout(500);
   }
 
-  async verifyNavigationUrl() {
+  async verifyNavigationTitle() {
     console.log(await this.page.title());
 
     console.log("sucess");
