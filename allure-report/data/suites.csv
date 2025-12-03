@@ -1,0 +1,3 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","23387","Navigating to Bromcom Primary MIS page","","Tue Dec 02 15:30:42 IST 2025","passed","Tue Dec 02 15:31:05 IST 2025","","","",""
+"","19186","Placing an order and verifying in order history","","Tue Dec 02 15:30:42 IST 2025","passed","Tue Dec 02 15:31:01 IST 2025","","","",""
