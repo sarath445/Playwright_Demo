@@ -4,7 +4,7 @@
 
     "paths": ["features/**/*.feature"],
 
-    "tags": "@web",
+    "tags": "@test2",
 
     "parallel": 2,
 

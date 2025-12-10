@@ -1,1 +1,1 @@
-[{"uid":"429605d6f54d14e6","name":"Navigating to Bromcom Primary MIS page","time":{"start":1764669642344,"stop":1764669665731,"duration":23387},"status":"passed","severity":"normal"},{"uid":"837d1243bcd54dca","name":"Placing an order and verifying in order history","time":{"start":1764669642344,"stop":1764669661530,"duration":19186},"status":"passed","severity":"normal"}]
+[{"uid":"a403b92dfbfb504b","name":"Navigating to Bromcom service page","time":{"start":1765373213379,"stop":1765373244765,"duration":31386},"status":"passed","severity":"normal"}]

@@ -10,8 +10,8 @@
   // 60 seconds
   Before(async function({pickle}){
     console.log("before hooks Test started");
-      browser = await chromium.launch({headless:false,slowMo:200});  //slows down the execution by 200ms
-        const context = await browser.newContext({viewport:{width:1280,height:720}});
+      browser = await chromium.launch({headless:false ,args: ['--start-maximized'],slowMo:200},);  //slows down the execution by 200ms
+        const context = await browser.newContext({viewport:null});
         this.page  = await context.newPage();
         this.poManager = new POMmanager(this.page);
         console.log('Scenario Name: '+pickle.name);

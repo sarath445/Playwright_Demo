@@ -9,6 +9,9 @@ export class BromcomHomeProduct {
   private readonly productsOption = `//a[normalize-space(text())='Products']`;
   private readonly primaryoption = `(//span[@class='text-black' and normalize-space(text())='Primary'])[1]`;
   private readonly primaryMISoption = `//a[normalize-space(text())='Primary School MIS']`;
+  private readonly demoBook = `(//a[normalize-space(text())='Book a demo'])[1]`;
+ 
+
   async bromcomPrimaryMIS() {
     await this.page.hover(this.productsOption);
     await this.page.hover(this.primaryoption);
@@ -25,4 +28,10 @@ export class BromcomHomeProduct {
 
     console.log("sucess");
   }
+
+  async bookDemoBromcom() {
+    await this.page.waitForLoadState('networkidle')
+    await this.page.click(this.demoBook);
+    
+}
 }
